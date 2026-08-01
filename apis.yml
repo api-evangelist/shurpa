@@ -1,7 +1,25 @@
 aid: shurpa
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/shurpa.png
 name: Shurpa
-description: Shurpa is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Shurpa was a healthcare logistics startup and a Techstars 2019 portfolio company,
+  building a medical transportation management software platform focused on the population health
+  and managed care space (AI-enabled coordination of non-emergency medical transportation and
+  in-home healthcare services). The company raised roughly $220K across two seed rounds and has
+  no visible operations today: the shurpa.com domain now returns HTTP 404 across all paths and is
+  parked on CSC/UltraDNS nameservers, and no developer portal, documentation, API, OpenAPI, or
+  .well-known surface could be found during enrichment. This profile is retained as an identity
+  record for a dormant/defunct provider with no discoverable API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/shurpa/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+x-status: dormant
+x-status-reason: 'shurpa.com returns HTTP 404 (parked); no API/developer surface found (enrichment 2026-07-21)'
 tags:
 - Company
+- Healthcare
+- Logistics
+- Medical Transportation
+- Population Health
+- Managed Care
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +49,8 @@ maintainers:
 common:
 - type: Website
   url: https://shurpa.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
